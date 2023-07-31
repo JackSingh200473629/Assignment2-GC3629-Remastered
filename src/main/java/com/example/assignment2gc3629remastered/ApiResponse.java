@@ -3,11 +3,10 @@ package com.example.assignment2gc3629remastered;
 import com.google.gson.annotations.SerializedName;
 
 public class ApiResponse {
-    private int id;
-    private String name;
-    private String email;
-    @SerializedName("vat")
-    private String companyNumber;
-    private String phone;
-    private String country;
+    @SerializedName("data")
+    private Company[] companyData;
+
+    public Company[] getCompanyData() {
+        return companyData;
+    }
 }
