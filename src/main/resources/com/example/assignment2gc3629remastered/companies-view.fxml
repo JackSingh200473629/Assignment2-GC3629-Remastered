@@ -7,29 +7,29 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2gc3629remastered.CompaniesController">
+<AnchorPane id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="702.0" stylesheets="@styles-view.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2gc3629remastered.CompaniesController">
    <children>
-      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" stylesheets="@styles-view.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
          <children>
-            <Label text="Company Database">
+            <Label id="companyDatabase" stylesheets="@styles-view.css" text="Company Database">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+            <TableView id="tableview" fx:id="tableView" prefHeight="200.0" prefWidth="200.0" stylesheets="@styles-view.css">
               <columns>
-                <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
-                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
-                  <TableColumn fx:id="companyNumberColumn" prefWidth="75.0" text="Company Number" />
-                  <TableColumn fx:id="phoneNumberColumn" prefWidth="75.0" text="Phone Number" />
-                  <TableColumn fx:id="emailColumn" prefWidth="75.0" text="Email" />
-                  <TableColumn fx:id="countryColumn" prefWidth="75.0" text="Country" />
+                <TableColumn id="id" fx:id="idColumn" prefWidth="75.0" text="ID" />
+                <TableColumn id="name" fx:id="nameColumn" prefWidth="75.0" text="Name" />
+                  <TableColumn id="companyNumber" fx:id="companyNumberColumn" prefWidth="75.0" text="Company Number" />
+                  <TableColumn id="phoneNumber" fx:id="phoneNumberColumn" prefWidth="75.0" text="Phone Number" />
+                  <TableColumn id="email" fx:id="emailColumn" prefWidth="75.0" text="Email" />
+                  <TableColumn id="country" fx:id="countryColumn" prefWidth="75.0" text="Country" />
               </columns>
                <columnResizePolicy>
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                </columnResizePolicy>
             </TableView>
+            <Label id="instruction" stylesheets="@styles-view.css" text=" Click a Company to Expand" />
          </children>
       </VBox>
    </children>

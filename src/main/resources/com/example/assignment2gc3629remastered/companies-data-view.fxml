@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="356.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2gc3629remastered.CompaniesDataController">
+<AnchorPane id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="356.0" prefWidth="476.0" stylesheets="@styles-data-view.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2gc3629remastered.CompaniesDataController">
    <children>
       <VBox prefHeight="373.0" prefWidth="483.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -33,7 +32,7 @@
                         <Insets bottom="20.0" left="20.0" right="180.0" top="20.0" />
                      </HBox.margin>
                   </Label>
-                  <Label prefHeight="17.0" prefWidth="123.0">
+                  <Label fx:id="lblName" prefHeight="17.0" prefWidth="123.0">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                      </HBox.margin>

@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class CompaniesDataController {
     @FXML
-    private  Label lblName;
+    private Label lblName;
 
     @FXML
     private Label lblCompanyNumber;
@@ -30,14 +30,12 @@ public class CompaniesDataController {
         SceneChanger.changeScenes(event, "companies-view.fxml", "Client Companies!");
     }
 
-    /*public void displayCompanyDetails(String viewTitle){
-        ApiResponse companyDetails = ApiUtility.getDataFromApi(viewTitle);
-
-        lblCountry.setText(Company.getCountry());
-        lblCompanyNumber.setText(Company.getCountry());
-        lblEmail.setText(Company.getEmail());
-        lblPhoneNumber.setText(Company.getPhone());
-        lblName.setText(companyDetails.toString());
-
-    }*/
+    public void displayCompanyDetails(Company company){
+        lblCountry.setText(company.getCountry());
+        lblCompanyNumber.setText(company.getCompanyNumber());
+        lblEmail.setText(company.getEmail());
+        lblPhoneNumber.setText(company.getPhone());
+        lblName.setText(company.getName());
+        lblId.setText(String.valueOf(company.getId()));
+    }
 }

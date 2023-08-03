@@ -1,0 +1,18 @@
+#base{
+    -fx-background-color: black;
+}
+
+#companyDatabase{
+    -fx-text-fill: red;
+    -fx-background-color: aqua;
+}
+
+#id, #name, #companyNumber, #phoneNumber, #email, #country{
+    -fx-text-fill: aqua;
+    -fx-background-color: red;
+}
+
+#instruction{
+    -fx-text-fill: red;
+    -fx-background-color: aqua;
+}
