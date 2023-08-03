@@ -1,3 +1,14 @@
 #base{
-    
+    -fx-background-color: black;
 }
+
+#idCaption, #nameCaption, #companyNumberCaption,#phoneNumberCaption, #emailCaption, #countryCaption, #id, #name, #companyNumber, #phoneNumber, #email, #country{
+    -fx-background-color: red;
+    -fx-text-fill: aqua;
+}
+
+#goBack{
+    -fx-text-fill: red;
+    -fx-background-color: aqua;
+}
+

@@ -11,28 +11,28 @@
    <children>
       <VBox prefHeight="373.0" prefWidth="483.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="0.0">
          <children>
-            <HBox prefHeight="57.0" prefWidth="163.0">
+            <HBox prefHeight="57.0" prefWidth="163.0" stylesheets="@styles-data-view.css">
                <children>
-                  <Label text="Id:">
+                  <Label id="idCaption" stylesheets="@styles-data-view.css" text="Id:">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="200.0" top="20.0" />
                      </HBox.margin>
                   </Label>
-                  <Label fx:id="lblId">
+                  <Label id="id" fx:id="lblId" stylesheets="@styles-data-view.css">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="60.0" top="20.0" />
                      </HBox.margin>
                   </Label>
                </children>
             </HBox>
-            <HBox>
+            <HBox stylesheets="@styles-data-view.css">
                <children>
-                  <Label text="Name">
+                  <Label id="nameCaption" stylesheets="@styles-data-view.css" text="Name">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="180.0" top="20.0" />
                      </HBox.margin>
                   </Label>
-                  <Label fx:id="lblName" prefHeight="17.0" prefWidth="123.0">
+                  <Label id="name" fx:id="lblName" prefHeight="17.0" prefWidth="123.0" stylesheets="@styles-data-view.css">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                      </HBox.margin>
@@ -41,12 +41,12 @@
             </HBox>
             <HBox prefHeight="57.0" prefWidth="549.0">
                <children>
-                  <Label prefHeight="17.0" prefWidth="104.0" text="Company Number:">
+                  <Label id="companyNumberCaption" prefHeight="17.0" prefWidth="104.0" stylesheets="@styles-data-view.css" text="Company Number:">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="110.0" top="20.0" />
                      </HBox.margin>
                   </Label>
-                  <Label fx:id="lblCompanyNumber" prefHeight="17.0" prefWidth="127.0">
+                  <Label id="companyNumber" fx:id="lblCompanyNumber" prefHeight="17.0" prefWidth="127.0" stylesheets="@styles-data-view.css">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                      </HBox.margin>
@@ -55,12 +55,12 @@
             </HBox>
             <HBox>
                <children>
-                  <Label text="Phone Number:">
+                  <Label id="phoneNumberCaption" stylesheets="@styles-data-view.css" text="Phone Number:">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="130.0" top="20.0" />
                      </HBox.margin>
                   </Label>
-                  <Label fx:id="lblPhoneNumber" prefHeight="17.0" prefWidth="128.0">
+                  <Label id="phoneNumber" fx:id="lblPhoneNumber" prefHeight="17.0" prefWidth="128.0" stylesheets="@styles-data-view.css">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                      </HBox.margin>
@@ -69,12 +69,12 @@
             </HBox>
             <HBox>
                <children>
-                  <Label text="Email:">
+                  <Label id="emailCaption" stylesheets="@styles-data-view.css" text="Email:">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="183.0" top="20.0" />
                      </HBox.margin>
                   </Label>
-                  <Label fx:id="lblEmail" prefHeight="17.0" prefWidth="123.0">
+                  <Label id="email" fx:id="lblEmail" prefHeight="17.0" prefWidth="123.0" stylesheets="@styles-data-view.css">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                      </HBox.margin>
@@ -83,12 +83,12 @@
             </HBox>
             <HBox>
                <children>
-                  <Label text="Country:">
+                  <Label id="countryCaption" stylesheets="@styles-data-view.css" text="Country:">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="170.0" top="20.0" />
                      </HBox.margin>
                   </Label>
-                  <Label fx:id="lblCountry" prefHeight="17.0" prefWidth="131.0">
+                  <Label id="country" fx:id="lblCountry" prefHeight="17.0" prefWidth="131.0" stylesheets="@styles-data-view.css">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                      </HBox.margin>
@@ -97,6 +97,6 @@
             </HBox>
          </children>
       </VBox>
-      <Button layoutX="399.0" layoutY="119.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" prefHeight="97.0" prefWidth="65.0" text="Go Back" />
+      <Button id="goBack" layoutX="399.0" layoutY="119.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" prefHeight="97.0" prefWidth="65.0" stylesheets="@styles-data-view.css" text="Go Back" />
    </children>
 </AnchorPane>
